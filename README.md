@@ -41,7 +41,7 @@ Berikut adalah beberapa dokumentasi antarmuka pengguna (*User Interface*) dari a
 
 | Tambah Catatan | Daftar Favorit | Pengaturan Aplikasi |
 | :---: | :---: | :---: |
-| ![Create](./screenshots/createyunan.jpeg) | ![Favorites](./screenshots/favoriteyunan.jpeg) | ![Settings](./screenshots/settingsyunan.jpeg) |
+| ![Create](./screenshots/createyunan.jpeg) | ![Favorites](./screenshots/favoriteyunan.jpeg) | ![Settings](./screenshots/settingyunan.jpeg) |
 | *Formulir interaktif untuk menulis dan menyimpan entri diary baru.* | *Kumpulan catatan pilihan yang telah ditandai sebagai favorit.* | *Menu pengaturan sistem serta informasi identitas pengembang.* |
 
 ## 🧩 Implementasi *React Hooks*
