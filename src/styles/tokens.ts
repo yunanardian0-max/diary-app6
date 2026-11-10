@@ -1,10 +1,10 @@
 export const COLORS = {
-  background: '#FFF9FB', // Pink pastel sangat muda untuk latar belakang layar
+  background: '#F0F7FF', // Biru pastel sangat muda untuk latar belakang layar
   surface: '#FFFFFF',
-  text: '#4A4045',       // Abu-abu tua lembut untuk teks (tidak terlalu hitam)
-  muted: '#8C7A82',      // Abu-abu mauve untuk teks sekunder
-  border: '#F2D6DF',     // Garis border pink lembut
-  accent: '#D47596',     // Pink dusty / rose gold untuk tombol & item aktif
+  text: '#1E293B',       // Biru gelap/slate untuk teks agar kontras dan jelas
+  muted: '#64748B',      // Abu-abu kebiruan untuk teks sekunder
+  border: '#BAE6FD',     // Garis border biru muda lembut
+  accent: '#0284C7',     // Biru cerah (Sky Blue) untuk tombol & item aktif
   danger: '#E57373',
 };
 
