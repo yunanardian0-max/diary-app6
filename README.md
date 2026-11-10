@@ -1,49 +1,55 @@
-# 🌸 Diary App - Modul 6 Praktikum Pemrograman Perangkat Bergerak
+# 📘 Diary Application - Modul 6 Praktikum Pemrograman Perangkat Bergerak
 
-Aplikasi buku harian (*Diary App*) berbasis **Expo Router (React Native & TypeScript)** dengan tema antarmuka *soft pastel* yang dirancang untuk mencatat momen-momen berharga sehari-hari secara interaktif, lengkap dengan fitur pencarian, filter suasana hati (*mood*), sistem penyimpanan favorit (*likes*), serta kustomisasi pengaturan.
-
----
-
-## 👩‍💻 Identitas Pembuat
-* **Nama**: [Reva Dwi Nurrahma]
-* **NIM**: [2430511041]
-* **Kelas**: [5C]
+Proyek aplikasi buku harian digital yang dikembangkan menggunakan **Expo Router (React Native & TypeScript)**. Aplikasi ini mengusung antarmuka bertema *soft pastel* yang estetis, dirancang untuk memudahkan pengguna dalam mendokumentasikan aktivitas harian secara interaktif. Dilengkapi dengan fitur unggulan seperti pencarian instan, filter suasana hati (*mood*), pengelolaan catatan favorit (*likes*), hingga menu pengaturan yang fleksibel.
 
 ---
 
-## 🚀 Cara Menjalankan Project
+## 👤 Informasi Pengembang
+- **Nama Praktikan**: Yunan Ardian
+- **NIM**: 2430511019
+- **Kelas**: 5C
 
+---
 
-1. **Clone repository atau buka folder project**:
+## ⚙️ Panduan Instalasi & Menjalankan Proyek
+
+1. **Arahkan direktori terminal ke folder proyek**:
    ```bash
    cd diary-app6
-2. **Instal dependensi package:**
+
+
+
+
+2. **Inisialisasi server pengembangan Expo:**
     ```Bash
     npm install 
 3. **Jalankan aplikasi menggunakan Expo:**
     ```Bash
     npx expo start -c
 
-Gunakan aplikasi Expo Go di perangkat seluler (Android/iOS) untuk memindai QR Code yang muncul di terminal, atau jalankan pada emulator/simulator pilihanmu. 
+Gunakan aplikasi pendamping Expo Go pada perangkat seluler (Android/iOS) untuk memindai QR Code yang tertera di terminal, atau jalankan melalui emulator/browser . 
 
-## 📸 Tangkapan Layar (Screenshots UI)
+## 📸 Screenshots UI
 
-| Home | Search | Detail |
+
+Berikut adalah beberapa dokumentasi antarmuka pengguna (*User Interface*) dari aplikasi Diary:
+
+| Beranda Utama | Pencarian Catatan | Detail Catatan |
 | :---: | :---: | :---: |
-| ![Home](./screenshots/home.jpeg) | ![Search](./screenshots/search.jpeg) | ![Detail](./screenshots/detail.jpeg) |
-| *Beranda utama aplikasi dengan daftar catatan dan filter mood.* | *Fitur pencarian dan penyaringan entri harian secara instan.* | *Halaman baca penuh untuk melihat detail isi cerita harian.* |
+| ![Home](./screenshots/homeyunan.jpeg) | ![Search](./screenshots/searchyunan.jpeg) | ![Detail](./screenshots/detailyunan.jpeg) |
+| *Tampilan utama beranda yang memuat daftar seluruh catatan harian.* | *Fitur pencarian instan untuk menemukan catatan berdasarkan kata kunci.* | *Halaman baca untuk melihat isi lengkap dari catatan yang dipilih.* |
 
-| Create | Favorites | Settings |
+| Tambah Catatan | Daftar Favorit | Pengaturan Aplikasi |
 | :---: | :---: | :---: |
-| ![Create](./screenshots/create.jpeg) | ![Favorites](./screenshots/favorite.jpeg) | ![Settings](./screenshots/settings.jpeg) |
-| *Formulir interaktif untuk membuat entri diary baru.* | *Tab khusus untuk mengelompokkan catatan favorit/disukai.* | *Halaman pengaturan dan informasi seputar aplikasi.* |
+| ![Create](./screenshots/createyunan.jpeg) | ![Favorites](./screenshots/favoriteyunan.jpeg) | ![Settings](./screenshots/settingsyunan.jpeg) |
+| *Formulir interaktif untuk menulis dan menyimpan entri diary baru.* | *Kumpulan catatan pilihan yang telah ditandai sebagai favorit.* | *Menu pengaturan sistem serta informasi identitas pengembang.* |
 
-## 🪝 Penjelasan Hooks yang Digunakan
+## 🧩 Implementasi *React Hooks*
 
-Berikut adalah daftar *React Hooks* yang diimplementasikan dalam pengembangan aplikasi *Diary App*:
+Berikut adalah ringkasan penggunaan *Hooks* utama yang diterapkan dalam logika pemrograman aplikasi ini:
 
-| Hook | Fungsi & Penjelasan dalam Aplikasi |
+| Jenis Hook | Peran & Implementasi dalam Sistem |
 | :--- | :--- |
-| **`useState`** | Digunakan untuk mengelola state lokal pada komponen, seperti menyimpan nilai input teks pada form tambah/edit diary, mengelola status tombol *favorit* (like/unlike), serta mengontrol daftar data catatan yang sedang ditampilkan. |
-| **`useEffect`** | Digunakan untuk menangani efek samping (*side effects*), seperti memuat data awal catatan harian dari penyimpanan lokal (*AsyncStorage*) saat aplikasi pertama kali dibuka (*mounted*), serta menyinkronkan perubahan data. |
-| **`useMemo`** | Digunakan untuk mengoptimalkan performa aplikasi dengan cara *memoizing* hasil penyaringan (*filtering*) data catatan berdasarkan kata kunci pencarian atau kategori *mood*, sehingga proses *rendering* ulang tidak melambat saat daftar catatan bertambah banyak. |
+| **`useState`** | Berfungsi untuk menangani perubahan state komponen secara lokal, meliputi pengelolaan nilai input form, status interaksi tombol *like/favorit*, serta pembaruan daftar entri data catatan. |
+| **`useEffect`** | Digunakan untuk mengeksekusi proses *side effects*, contohnya memuat data awal catatan dari penyimpanan lokal (*AsyncStorage*) saat aplikasi pertama kali dimuat (*on mount*). |
+| **`useMemo`** | Berfungsi meningkatkan efisiensi kinerja aplikasi melalui teknik *memoization* pada proses penyaringan data (*filtering*) berdasarkan kata kunci atau kategori *mood*, sehingga aplikasi tetap responsif. |
