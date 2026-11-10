@@ -7,7 +7,7 @@ Proyek aplikasi buku harian digital yang dikembangkan menggunakan **Expo Router 
 ## 👤 Informasi Pengembang
 - **Nama Praktikan**: Yunan Ardian
 - **NIM**: 2430511019
-- **Kelas**: 5C
+- **Kelas**: 5A
 
 ---
 
